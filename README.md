@@ -1,6 +1,11 @@
 ALl the codes come from origin (Albert repor)[https://github.com/google-research/google-research/tree/master/albert].
 This repo trying to reproduce the results and provide the ckpt file.
 
+* prepare pretrain data
+  * Download wiki data (https://apache-mxnet.s3-accelerate.dualstack.amazonaws.com/gluon/dataset/enwiki-197b5d8d.zip)
+  * Create tfrecords for pretrain e.g.
+    * `python create_pretraining_data.py --input_file=${INPUT_FILE}  --output_file=${OUTPUT_FILE} --vocab_file=30k-clean.vocab --spm_model_file=30k-clean.model --do_lower_case=True --max_seq_length=512 --random_seed=12345 --dupe_factor=5`
+
 ALBERT
 ======
 
