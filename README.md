@@ -1,3 +1,6 @@
+ALl the codes come from origin (Albert repor)[https://github.com/google-research/google-research/tree/master/albert].
+This repo trying to reproduce the results and provide the ckpt file.
+
 ALBERT
 ======
 
